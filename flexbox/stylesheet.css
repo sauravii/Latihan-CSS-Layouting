@@ -1,0 +1,64 @@
+/* 
+
+PROPERTI YANG BISA DIGUNAKAN DI CONTAINER FLEXBOX :
+- display = untuk mengubah menjadi flexbox (display:flex;)
+- flex-direction = mengatur arah dr elemen di dalam container  
+  row (baris) | row-reverse | column (kolom) | column-reverse
+- flex-wrap = untuk mengatur elemen apabila sudah tidak muat di dalam container (otomatis akan dibawahnya)
+              kalo gpke ini, kontenya akn terus maksa 1 baris wlopun ukurannya udah ga cukup
+  wrap | wrap-reverse
+- justify-content = untuk mengatur penjajaran items secara horizontal
+  flex-start | flex-end | center | space-between | space-around | space-evenly
+- align-items = untuk mengatur penjajaran items secara vertikal
+  flex-start | flex-end | center | baseline (textnya yg sejajar) | stretch (bisa kalo itemsnya ga diatur heightnya)
+- align-content = sama ky align-items, cuma hnya berlaku apabila contentnya lebih dari 1 baris
+  flex-start | flex-end | center | space-between | space-around | stretch 
+
+*/
+
+.container {
+  width: 600px;
+  height: 150px;
+  border: 3px solid #333;
+  margin: 10px auto;
+  padding: 5px;
+  display: flex;
+  box-sizing: border-box;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
+  align-items: flex-start;
+}
+
+/* 
+
+PROPERTI YANG BISA DIGUNAKAN DI ITEMS FLEXBOS :
+- order = untuk menukar posisi
+- flex-grow/flex = utk mengatur ukuran wlopun tdk didefinisikan height dan widthnya
+- align-self = mengatur 1 items element saja 
+  flex-start | flex-end | stretch
+
+*/
+
+.container div {
+  background-color: aqua;
+  margin: 5px;
+  text-align: center;
+}
+
+.satu {
+  flex: 2;
+}
+
+.dua {
+  flex: 3;
+  align-self: flex-end;
+}
+
+.tiga {
+  flex: 2;
+}
+
+.empat {
+  flex: 2;
+}
