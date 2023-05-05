@@ -1,0 +1,151 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: rgb(242, 242, 242);
+  padding-bottom: 1500px;
+}
+
+/* Latihan 1 - Kolom */
+.container-satu {
+  max-width: 850px;
+  margin: 25px auto;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-satu div {
+  margin-right: 10px;
+}
+
+.konten-utama {
+  flex: 3;
+  order: 2;
+}
+
+.sidebar-satu {
+  flex: 1;
+  order: 1;
+}
+
+.sidebar-dua {
+  flex: 1;
+  order: 3;
+}
+
+/* Latihan 2 - Service / Features */
+.container-dua {
+  max-width: 850px;
+  margin: 50px auto;
+  background-color: white;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.layanan {
+  width: 30%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.layanan.satu {
+  background-color: rgb(147, 147, 212);
+}
+
+.layanan.satu:hover {
+  background-color: white;
+  border: 2px solid rgb(147, 147, 212);
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+
+.layanan.dua {
+  background-color: rgb(168, 234, 168);
+}
+
+.layanan.dua:hover {
+  background-color: white;
+  border: 2px solid rgb(168, 234, 168);
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+
+.layanan.tiga {
+  background-color: rgb(222, 148, 148);
+}
+
+.layanan.tiga:hover {
+  background-color: white;
+  border: 2px solid rgb(222, 148, 148);
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+
+/* Latihan 3 - Gallery */
+
+/* Latihan 4 - Card */
+.container-empat {
+  width: 850px;
+  margin: 50px auto;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.card {
+  border: 2px solid #aaa;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: white;
+  margin: 10px;
+  flex: 1;
+}
+
+.card .header {
+  height: 180px;
+  background-color: rgb(158, 158, 158);
+}
+
+.card .content {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.card:hover {
+  transform: scale(1.12);
+  transition-duration: 0.5s;
+}
+
+/* Latihan 5 - Centering */
+.container-lima {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  background-color: white;
+  display: flex;
+}
+
+.kotak {
+  width: 250px;
+  height: 250px;
+  background-color: salmon;
+  /* centering kotak with flexbox */
+  margin: auto;
+  display: flex;
+  text-align: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.kotak span {
+  margin: auto;
+}

@@ -25,9 +25,9 @@ PROPERTI YANG BISA DIGUNAKAN DI CONTAINER FLEXBOX :
   display: flex;
   box-sizing: border-box;
   /* flex-direction: row; */
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   /* justify-content: space-between; */
-  align-items: flex-start;
+  /* align-items: flex-start; */
 }
 
 /* 
@@ -51,8 +51,7 @@ PROPERTI YANG BISA DIGUNAKAN DI ITEMS FLEXBOS :
 }
 
 .dua {
-  flex: 3;
-  align-self: flex-end;
+  flex: 2;
 }
 
 .tiga {
@@ -61,4 +60,17 @@ PROPERTI YANG BISA DIGUNAKAN DI ITEMS FLEXBOS :
 
 .empat {
   flex: 2;
+}
+
+/* Container Dua */
+.container-dua {
+  width: 600px;
+  border: 3px solid #333;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-dua div {
+  background-color: rgb(192, 102, 102);
 }
